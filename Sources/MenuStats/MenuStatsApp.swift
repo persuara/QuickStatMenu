@@ -202,6 +202,8 @@ struct MenuStatsApp: App {
                         .menuIndicator(.hidden)
                         .fixedSize()
                         .help("Quit or force quit \(p.name)")
+                    } else {
+                        Image(systemName: "xmark.circle").font(.system(size: 11)).hidden()
                     }
                 }
                 .font(.system(size: 11))
